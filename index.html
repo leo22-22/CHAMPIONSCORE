@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Champions League - Playoffs 24/25</title>
+</head>
+<body>
+    
+    <header>
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <nav class="menu" id="menu">
+            <button class="close-menu" onclick="toggleMenu()">&#10005;</button> <!-- Botão de fechar -->
+            <ul>
+                <li onclick="openTab('mata-mata')">Mata-Mata</li>
+                <li onclick="openTab('equipes')">Equipes</li>
+                <li onclick="openTab('estatisticas')">Estatísticas</li>
+                <li onclick="openTab('campeoes')">Campeões</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 id="page-title">HOME</h1>
+    <div class="container">
+        <div id="mata-mata" class="tab-content">
+            <div class="tabs">
+                <div class="tab" onclick="openSubTab('playoffs')">
+                    <span>&#x1F3C6;</span> Playoffs
+                </div>
+                <div class="tab" onclick="openSubTab('oitavas')">
+                    <span>&#x1F3C6;</span> Oitavas de Final
+                </div>
+            </div>
+            <div id="playoffs" class="sub-tab-content">
+                <!-- Informações dos Playoffs aqui -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Horário (Brasília)</th>
+                            <th>Equipe Casa</th>
+                            <th>Placar Ida</th>
+                            <th>Equipe Visitante</th>
+                            <th>Transmissão</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dados de jogos dos Playoffs -->
+                        <tr>
+                            <td>18 de fevereiro de 2025</td>
+                            <td>14:45</td>
+                            <td>AC Milan</td>
+                            <td>0-1</td>
+                            <td>Feyenoord</td>
+                            <td>TNT Sports + MAX</td>
+                        </tr>
+                        <!-- Adicione mais jogos conforme necessário -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="oitavas" class="sub-tab-content">
+                <!-- Informações das Oitavas de Final -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Classificados</th>
+                            <th>Equipes do Play-Offs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dados das Oitavas -->
+                        <tr>
+                            <td>Liverpool ou Barcelona</td>
+                            <td>PSG ou Stade Brestois</td>
+                        </tr>
+                        <!-- Adicione mais dados conforme necessário -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- As outras abas permanecem aqui -->
+        <div id="equipes" class="tab-content">
+            <h2>Equipes Participantes</h2>
+            <!-- Informações sobre os times -->
+        </div>
+        <div id="estatisticas" class="tab-content">
+            <h2>Estatísticas</h2>
+            <!-- Adicionar estatísticas relevantes -->
+        </div>
+        <div id="campeoes" class="tab-content">
+            <h2>Campeões Anteriores</h2>
+            <!-- Lista de campeões da Champions League -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
