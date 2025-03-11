@@ -1,101 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Champions League - Playoffs 24/25</title>
+    <title>Document</title>
 </head>
 <body>
-    
-    <header>
-        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
-        <nav class="menu" id="menu">
-            <button class="close-menu" onclick="toggleMenu()">&#10005;</button> <!-- Botão de fechar -->
-            <ul>
-                <li onclick="openTab('mata-mata')">Mata-Mata</li>
-                <li onclick="openTab('equipes')">Equipes</li>
-                <li onclick="openTab('estatisticas')">Estatísticas</li>
-                <li onclick="openTab('campeoes')">Campeões</li>
-            </ul>
-        </nav>
+    <header id="header">
+        <a href="index.html"><h1>HOME</h1></a>
+        <a href="classificacao.html"><h1>CLASSIFICAÇÃO</h1></a>
+        <a href="#"><h1>DADOS</h1></a>
+        <a href="#"><h1>TIMES</h1></a>
     </header>
-    
-    <h1 id="page-title">HOME</h1>
-    <div class="container">
-        <div id="mata-mata" class="tab-content">
-            <div class="tabs">
-                <div class="tab" onclick="openSubTab('playoffs')">
-                    <span>&#x1F3C6;</span> Playoffs
-                </div>
-                <div class="tab" onclick="openSubTab('oitavas')">
-                    <span>&#x1F3C6;</span> Oitavas de Final
-                </div>
-            </div>
-            <div id="playoffs" class="sub-tab-content">
-                <!-- Informações dos Playoffs aqui -->
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Data</th>
-                            <th>Horário (Brasília)</th>
-                            <th>Equipe Casa</th>
-                            <th>Placar Ida</th>
-                            <th>Equipe Visitante</th>
-                            <th>Transmissão</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Dados de jogos dos Playoffs -->
-                        <tr>
-                            <td>18 de fevereiro de 2025</td>
-                            <td>14:45</td>
-                            <td>AC Milan</td>
-                            <td>0-1</td>
-                            <td>Feyenoord</td>
-                            <td>TNT Sports + MAX</td>
-                        </tr>
-                        <!-- Adicione mais jogos conforme necessário -->
-                    </tbody>
-                </table>
-            </div>
 
-            <div id="oitavas" class="sub-tab-content">
-                <!-- Informações das Oitavas de Final -->
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Classificados</th>
-                            <th>Equipes do Play-Offs</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Dados das Oitavas -->
-                        <tr>
-                            <td>Liverpool ou Barcelona</td>
-                            <td>PSG ou Stade Brestois</td>
-                        </tr>
-                        <!-- Adicione mais dados conforme necessário -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        
-        <!-- As outras abas permanecem aqui -->
-        <div id="equipes" class="tab-content">
-            <h2>Equipes Participantes</h2>
-            <!-- Informações sobre os times -->
-        </div>
-        <div id="estatisticas" class="tab-content">
-            <h2>Estatísticas</h2>
-            <!-- Adicionar estatísticas relevantes -->
-        </div>
-        <div id="campeoes" class="tab-content">
-            <h2>Campeões Anteriores</h2>
-            <!-- Lista de campeões da Champions League -->
-        </div>
+    <div id="content">
+        <p>
+            <b>UEFA Champions League: A Maior Competição de Clubes da Europa</b>
+        </p>
+        <h1>
+            A UEFA Champions League (Liga dos Campeões da UEFA) é a principal competição de clubes de futebol da Europa e uma das mais prestigiadas do mundo. Organizada pela União das Associações Europeias de Futebol (UEFA), o torneio reúne os melhores times do continente para disputar o título de campeão europeu.
+        </h1>
+        <p>
+            História e Evolução
+        </p>
+        <h1>
+            A competição teve sua origem em 1955, sob o nome de Copa dos Clubes Campeões Europeus, com um formato de mata-mata. Inicialmente, apenas os campeões nacionais de cada país participavam. Em 1992, o torneio foi reformulado e passou a se chamar UEFA Champions League, adotando um formato com fase de grupos, aumentando o número de participantes e tornando-se ainda mais rentável e disputado.
+        </h1>
+        <p>
+            Formato da Competição
+        </p>
+        <h1>
+            A partir da temporada 2024/25, a Champions League passou por uma grande reformulação, abandonando o tradicional formato de fase de grupos com 32 times e adotando um modelo de liga com 36 equipes. As principais mudanças são: <br><br>
+            Fase de Liga (Substitui a Fase de Grupos) <br><br>
+
+            36 clubes disputam a fase inicial em um torneio único no formato de liga (modelo suíço).
+            Cada time joga 8 partidas contra adversários diferentes (4 em casa e 4 fora).
+            Não há mais grupos fixos; os confrontos são determinados com base no ranking dos times.
+            <br><br>
+            Classificação para a Fase Eliminatória <br><br>
+
+            Os 8 melhores colocados da fase de liga avançam diretamente para as oitavas de final.
+            Os times entre a 9ª e a 24ª posição disputam um playoff de ida e volta para definir as outras 8 vagas. 
+            Os clubes que terminarem a fase de liga abaixo da 24ª posição são eliminados. <br><br>
+            Fase Eliminatória <br><br>
+
+            A partir das oitavas de final, o torneio mantém o formato tradicional de mata-mata com jogos de ida e volta.
+            A final continua em jogo único, realizado em um estádio previamente definido pela UEFA.
+        </h1>
+        <p>
+            Importância e Prestígio
+        </p>
+        <h1>
+            A Champions League não é apenas uma competição de prestígio, mas também a mais lucrativa do futebol europeu, gerando receitas bilionárias para clubes, patrocinadores e transmissões de TV. Além disso, o campeão da Champions League garante vaga na Supercopa da UEFA e no Mundial de Clubes da FIFA.
+        </h1>
     </div>
-    
-    <script src="script.js"></script>
 </body>
 </html>

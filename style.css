@@ -1,179 +1,53 @@
-body {
-    font-family: Arial, sans-serif;
+body{
+    background-image: url('champions-league.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#header{
+    color: white;
+    padding: 10px;
     text-align: center;
-    background-color: #0a0a23;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-
-/* Container principal */
-.container {
-    width: 80%;
-    margin: 80px auto 0;
-}
-
-/* Estilos para as abas (Mata-Mata, Equipes, etc.) */
-.tabs {
+    font-size: 10px;
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: space-around;
 }
 
-.tab {
-    padding: 10px 20px;
-    background-color: #333366;
-    cursor: pointer;
+a {
+    text-decoration: none;
+    color: white; 
+    border: 1px solid rgba(0,37,89,1);
+    transition: all 0.3s ease; 
+    background-color: rgba(0,37,89,1);
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: transparent; 
+    color: white; 
+}
+
+#content{
+    text-align: justify;
     border: 1px solid white;
-    margin: 0 5px;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
 }
-
-.tab:hover {
-    background-color: #5555aa;
-}
-
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
-}
-
-.sub-tab-content {
-    display: none;
-}
-
-.sub-tab-content.active {
-    display: block;
-}
-
-.tab span {
-    font-size: 24px;
-    margin-right: 5px;
-}
-
-/* Menu Hamburger */
-.menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #004080;
-    padding: 15px;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    border: none;
-}
-
-.menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Menu lateral */
-.menu {
-    display: none;
-    background: #004080;
+#content p{
+    color: rgba(0,37,89,1);
     padding: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    z-index: 100;
-    flex-direction: column;
-}
-
-.menu.active {
+    font-size: 40px;
     display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-.menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu ul li {
-    padding: 15px;
-    color: white;
-    cursor: pointer;
-    border-bottom: 1px solid #003366;
-}
-
-.menu ul li:hover {
-    background: #002060;
-}
-
-/* Estilo do botão de fechar o menu */
-.close-menu {
-    font-size: 30px;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-/* Ajustando conteúdo da página */
-h1 {
-    margin-top: 0;
-}
-
-/* Estilos para a tabela */
-table {
-    width: 100%;
-    margin: 20px 0;
-    border-collapse: collapse;
-    background-color: #1c1c3c; /* Cor de fundo */
-    color: white;
-}
-
-/* Estilo das células da tabela */
-th, td {
-    border: 1px solid white; /* Borda visível */
+#content h1{
+    color: black;
     padding: 10px;
-}
-
-/* Estilo do cabeçalho da tabela */
-th {
-    background-color: #333366;
-}
-
-/* Garantir que o conteúdo da tabela fique visível */
-tbody tr {
-    border-bottom: 1px solid #555555; /* Adiciona uma borda inferior para cada linha */
-}
-
-/* Ajustar fundo de linhas alternadas (opcional) */
-tbody tr:nth-child(even) {
-    background-color: #2a2a4b; /* Fundo alternado para uma melhor leitura */
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #1c1c3c;
-}
-
-/* Ajustes adicionais para a responsividade */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    .menu-toggle {
-        display: flex;
-        justify-content: flex-start;
-        background-color: #002060;
-        padding: 15px;
-    }
-
-    .tabs {
-        flex-direction: column;
-    }
-
-    .tab {
-        margin-bottom: 10px;
-    }
+    font-size: 20px;
 }
